@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Approval System - Successful Image</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h3>Current number of Votes: {{ numVotes }}</h3>
+    <p>Image Details:</p>
+    <ul>
+        <li><strong>Authentication Token:</strong> {{ authToken }}</li>
+        <li><strong>X Location:</strong> {{ x_loc }}</li>
+        <li><strong>Y Location:</strong> {{ y_loc }}</li>
+    </ul>
+    <p>Image Files:</p>
+    <strong>Cropped Image:<br></strong>
+    <img src="http://fa23-cs340-080.cs.illinois.edu:5001/image" alt="Cropped Image">
+    <strong><br>Tile Image:<br></strong>
+    <img src="http://fa23-cs340-080.cs.illinois.edu:5001/tile" alt="Tile Image">
+    <p>Vote Details:</p>
+    <ul>
+        <li><strong>Vote Token:</strong> {{ vote_data.voteToken }}</li>
+        <li><strong>X Location:</strong> {{ vote_data.xloc }}</li>
+        <li><strong>Y Location:</strong> {{ vote_data.yloc }}</li>
+    </ul>
+    <a href="/castVote">Vote again</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Approval System - Successful Vote</title>
+</head>
+<body>
+    <h2>Vote Successful!</h2>
+    <p>Your vote has been successfully casted.</p>
+    <h3>Current number of Votes: {{ numVotes }}</h3>
+    <p>Vote Details:</p>
+    <ul>
+        <li><strong>Vote Token:</strong> {{ vote_data.voteToken }}</li>
+        <li><strong>X Location:</strong> {{ vote_data.xloc }}</li>
+        <li><strong>Y Location:</strong> {{ vote_data.yloc }}</li>
+    </ul>
+    <p>Options:</p>
+    <ul>
+        <li><a href="/castVote">Vote again</a></li>
+        <li><a href="/dashboard">Go To Dashboard</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Approval System - Vote</title>
+</head>
+<body>
+    <h2>Image approved, it's time To Vote!</h2>
+    <p>Select who to vote for</p>
+
+    <!-- Add a form for voting -->
+    <form action="/castVote" method="post">
+        <label for="x_loc">X Location:</label>
+        <input type="number" id="x_loc" name="x_loc" required>
+
+        <label for="y_loc">Y Location:</label>
+        <input type="number" id="y_loc" name="y_loc" required>
+
+        <button type="submit">Vote</button>
+    </form>
+    <a href="/dashboard">Go To Dashboard</a>
+</body>
+</html>
