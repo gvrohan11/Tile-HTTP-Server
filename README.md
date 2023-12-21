@@ -1,4 +1,4 @@
-CS 340 - Computer Systems Final Project
+# CS 340 - Computer Systems Final Project (Fall 2023)
 
 HTTP tile server used to register client and image to course-wide canvas server
 
@@ -12,4 +12,5 @@ To run it:
 1. clone the repository
 2. Install requirements: "python3 -m pip install -r requirements.txt"
 3. go to /tile
-4. run the command: "python 3 -m flask run --port==5001"
+4. run the command: "python 3 -m flask run"
+5. Open address, shown in terminal, in web browser
